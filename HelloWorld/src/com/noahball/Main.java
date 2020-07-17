@@ -32,5 +32,14 @@ public class Main {
         point1.x = 2;
         System.out.println(point2);
 
+        // Strings
+        // Pretty self-explanatory
+        String message = "Hello World";
+        String lookFor = "World";
+        System.out.println(message);
+        System.out.println(message + ", you are amazing!"); // Basically concatenation and most work with strings is the same as C#
+        System.out.println("The myth that the string " + message + " ends with " + lookFor + " has finally been solved, it is "+ message.endsWith(lookFor) + "!"); // Okay, this is actually identical to C# :joy:
+        System.out.println("The string " + message + " is " + message.length() + " characters long.");
+
     }
 }
