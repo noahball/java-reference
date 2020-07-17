@@ -51,5 +51,11 @@ public class Main {
         System.out.println("The string \"" + message + "\" converted to uppercase is \"" + message.toUpperCase() + "\"!"); // Converting strings to all uppercase. Once again, this is literally identical to C#!
         System.out.println("The string \"" + messageTrim + "\" with all unneeded spaces removed is \"" + message.trim() + "\"!"); // Removing all unneeded spaces, good if a user fills out a form and they accidentally add more spaces than needed
 
+        // Escape Sequences
+        System.out.println("This string has \"escaped double quotes\" in it!"); // Haha, I bet the tutorial and figured out how to escape quotes before they were even mentioned!
+        System.out.println("C:\\Windows\\system32\\..."); // Escaping back slashes, else you have the domino-effect and it escapes the quotes, leading to a broken program.
+        System.out.println("Step 1: ...\nStep 2: ...\nStep 3: ..."); // Skipping lines... just like JavaScript!
+        System.out.println("We\tlove\ttabs!"); // Tabs
+
     }
 }
