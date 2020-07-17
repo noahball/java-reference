@@ -36,10 +36,20 @@ public class Main {
         // Pretty self-explanatory
         String message = "Hello World";
         String lookFor = "World";
+        String lookForChar = "l";
+        String find = "Hello";
+        String replace = "Howdy";
+        String messageTrim = "   Hello World!  ";
         System.out.println(message);
         System.out.println(message + ", you are amazing!"); // Basically concatenation and most work with strings is the same as C#
         System.out.println("The myth that the string " + message + " ends with " + lookFor + " has finally been solved, it is "+ message.endsWith(lookFor) + "!"); // Okay, this is actually identical to C# :joy:
         System.out.println("The string " + message + " is " + message.length() + " characters long.");
+        System.out.println("The character(s) " + lookForChar + " are in the following locations in the string " + message + ": " + message.indexOf(lookForChar)); // Return the location(s) of character(s) in a string. Once again this is very similar to C#.
+        System.out.println("Replacing the character(s) \"" + find + "\" in the string \"" + message + "\" with \"" + replace + "\" returns the string \"" + message.replace(find, replace) + "\"!"); // Finding and replacing character(s) in a string. Use a \ before quotes for Java to ignore it and not break the string.
+        System.out.println(message); // For obvious reasons finding and replacing does NOT modify the original string.
+        System.out.println("The string \"" + message + "\" converted to lowercase is \"" + message.toLowerCase() + "\"!"); // Converting strings to all lowercase. Once again, this is literally identical to C#!
+        System.out.println("The string \"" + message + "\" converted to uppercase is \"" + message.toUpperCase() + "\"!"); // Converting strings to all uppercase. Once again, this is literally identical to C#!
+        System.out.println("The string \"" + messageTrim + "\" with all unneeded spaces removed is \"" + message.trim() + "\"!"); // Removing all unneeded spaces, good if a user fills out a form and they accidentally add more spaces than needed
 
     }
 }
