@@ -1,5 +1,6 @@
 package com.noahball;
 
+import java.awt.*;
 import java.util.Date;
 
 public class Main {
@@ -17,7 +18,19 @@ public class Main {
         System.out.println(myAge); // Print a variable
 
         // Primitive types - complex data
+        // Primitive types are completely independent of each other
         Date now = new Date(); // Objects of a class
         System.out.println(now); // Print an object, in this case the current time
+
+        byte x = 1;
+        byte y = x;
+        x = 2;
+        System.out.println(y); // You will see that the variable "y" hasn't changed, even though x has. This is because these variables are independent of each other, and do not dynamically sync.
+
+        Point point1 = new Point(x, y); // Objects with parameters
+        Point point2 = point1; // Objects act like variables in a way... they can be the same as each other.
+        point1.x = 2;
+        System.out.println(point2);
+
     }
 }
